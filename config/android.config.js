@@ -9,7 +9,7 @@ config.capabilities = [
         "udid": "emulator-5554",
         "platformName": `Android`,
         "platformVersion": `${androidInfo.platFormVersion()}`,
-        //"app": path.resolve(`./apps/${androidInfo.appName()}`),
+        "app": path.resolve(`./apps/${androidInfo.appName()}`),
         "appPackage": "com.wdiodemoapp",
         "appActivity": "com.wdiodemoapp.MainActivity",
         "automationName": "UiAutomator2"
