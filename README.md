@@ -52,4 +52,8 @@ fi
 
 ## Run the Test :
 
-- NPM run android
+- Start appium server using desktop / console. 
+- Run command :
+```bash
+npm run android
+```
