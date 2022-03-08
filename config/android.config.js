@@ -17,8 +17,10 @@ config.capabilities = [
 ];
 
 config.specs = [
-    './tests/*.js'
+     './tests/*.js'
 ];
+
+config.maxInstances = 1
 
 exports.config = config;
 

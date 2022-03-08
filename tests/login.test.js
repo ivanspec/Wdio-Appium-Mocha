@@ -1,15 +1,15 @@
 const RegisterPage = require('../pages/register.page');
-const LoginPage = require('./../pages/login.page')
+const Login = require('./../pages/login.page')
 const {expect} = require('chai');
 
 describe('Login Test', () => {
     it('Open Apps', async () => {
         await RegisterPage.open();
-        await LoginPage.loginMenu();
+        await Login.loginMenu();
     });
 
     it('User fill login form', async () => {
-        await LoginPage.loginForm('test@pp.zz','12341234');
+        await Login.loginForm('test@pp.zz','12341234');
 
     })
 
