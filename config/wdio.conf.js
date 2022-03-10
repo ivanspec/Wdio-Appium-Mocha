@@ -36,7 +36,7 @@ exports.config = {
     // and 30 processes will get spawned. The property handles how many capabilities
     // from the same test should run tests.
     //
-    //maxInstances: 1,
+    maxInstances: 1,
     //
     // If you have trouble getting all important capabilities together, check out the
     // Sauce Labs platform configurator - a great tool to configure your capabilities:
@@ -61,7 +61,7 @@ exports.config = {
     // Define all options that are relevant for the WebdriverIO instance here
     //
     // Level of logging verbosity: trace | debug | info | warn | error | silent
-    logLevel: 'trace',
+    logLevel: 'debug',
     //
     // Set specific log levels per logger
     // loggers:
@@ -99,23 +99,21 @@ exports.config = {
     // Test runner services
     // Services take over a specific job you don't want to take care of. They enhance
     // your test setup with almost no effort. Unlike plugins, they don't add new
-    // commands. Instead, they hook themselves up into the test process.
-    services: ['appium'],
-    // appium: {
-    //     command: 'appium',
+    // 
+    // This service when you activate, will make dont need manual start appium
+    // services: [['appium', {
     //     args: {
-    //         logTimestamp: true,
+    //       address: '127.0.0.1',
+    //       port: 4723
     //     },
-    //     logPath: 'test-result/appium.log',
-    // },
-    host: 'localhost',
+    //     logPath: './',
+    //   }]],
     port: 4723,
     path: '/wd/hub',
-
     // Framework you want to run your specs with.
     // The following are supported: Mocha, Jasmine, and Cucumber
     // see also: https://webdriver.io/docs/frameworks.html
-    //
+    //cl
     // Make sure you have the wdio adapter package for the specific framework installed
     // before running any tests.
     framework: 'mocha',

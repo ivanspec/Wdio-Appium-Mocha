@@ -5,7 +5,7 @@ const {expect} = require('chai');
 describe('Login Test', () => {
     it('Open Apps', async () => {
         await RegisterPage.open();
-        await Login.loginMenu();
+       await Login.loginMenu();
     });
 
     it('User fill login form', async () => {
