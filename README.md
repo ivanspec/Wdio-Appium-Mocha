@@ -51,7 +51,7 @@ fi
 
 
 ## Run the Test :
-
+- Download APK and extract rar files inside this repo : https://drive.google.com/file/d/11YLz8w9ML5VilEkriW64Ea50suxZCtpI/view?usp=sharing
 - Start appium server using desktop / console. 
 - Run command :
 ```bash
